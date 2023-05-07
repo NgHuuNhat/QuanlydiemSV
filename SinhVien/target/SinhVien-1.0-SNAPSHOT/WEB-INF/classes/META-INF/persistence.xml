@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.nhn_SinhVien_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.nhn.pojo.Lophoc</class>
+    <class>com.nhn.pojo.Role</class>
+    <class>com.nhn.pojo.LophocUser</class>
+    <class>com.nhn.pojo.Monhoc</class>
+    <class>com.nhn.pojo.Diendan</class>
+    <class>com.nhn.pojo.Diemso</class>
+    <class>com.nhn.pojo.Role_1</class>
+    <class>com.nhn.pojo.User</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sinhvien?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Admin@123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>
